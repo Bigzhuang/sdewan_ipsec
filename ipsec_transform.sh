@@ -331,7 +331,7 @@ config_ipsec() {
 prepare_env() {
 	mkdir -p /var/ipsec
 	remove_includes
-	config_load ipsec
+	config_load ipsec # from where
 	config_foreach config_ipsec ipsec
 	config_foreach config_remote remote
 }
